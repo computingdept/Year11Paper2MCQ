@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>J277 Paper 2 MCQ Practice - June 2022</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Topic navigation">
+      <div class="brand">
+        <div class="brand-mark">J277</div>
+        <div>
+          <h1>Paper 2 MCQ</h1>
+          <p>June 2022 • Computational thinking, algorithms and programming</p>
+        </div>
+      </div>
+
+      <nav id="topicNav" class="topic-nav"></nav>
+
+      <div class="side-card">
+        <div class="score-line"><span>Score</span><strong id="scoreText">0 / 0</strong></div>
+        <div class="progress-track"><div id="progressBar" class="progress-bar"></div></div>
+        <button id="resetBtn" class="ghost-btn" type="button">Restart practice</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">OCR J277 • Paper 2 • June 2022</p>
+          <h2>MCQ revision practice</h2>
+          <p class="hero-text">Choose a topic on the left. Each question gives instant feedback and a short explanation.</p>
+        </div>
+        <div class="hero-actions">
+          <button id="shuffleBtn" class="secondary-btn" type="button">Shuffle questions</button>
+          <button id="reviewBtn" class="secondary-btn" type="button">Review mistakes</button>
+        </div>
+      </section>
+
+      <section class="quiz-card" aria-live="polite">
+        <div class="quiz-topline">
+          <span id="topicBadge" class="topic-badge">Topic</span>
+          <span id="questionCounter" class="counter">Question 1 of 1</span>
+        </div>
+
+        <h3 id="questionText" class="question-text"></h3>
+        <div id="questionImageWrap" class="question-image-wrap hidden"><img id="questionImage" class="question-image" alt="Question diagram" /></div>
+        <div id="codeBlock" class="code-block hidden"></div>
+        <div id="options" class="options"></div>
+
+        <div id="feedback" class="feedback hidden"></div>
+
+        <div class="quiz-actions">
+          <button id="markBtn" class="primary-btn" type="button">Mark</button>
+          <button id="prevBtn" class="secondary-btn" type="button">Previous</button>
+          <button id="nextBtn" class="secondary-btn" type="button">Next</button>
+        </div>
+      </section>
+
+      <section class="summary-card">
+        <h3>Topic summary</h3>
+        <div id="topicSummary" class="summary-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
